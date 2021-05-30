@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> MOBILE BARBERO </title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <style>
+
+            body{
+               
+            }
+                
+               #loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 1;
+            width: 120px;
+            height: 120px;
+            margin: -76px 0 0 -76px;
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid black;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+            }
+
+            @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+            }
+
+            @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+            }    
+
+            .animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+
+                
+                
+            
+
+            
+    
+        
+         
+        </style>
+
+
+      
+    </head>
+
+    <!-- 
+
+        <body style=" background-image: url(hello.jpg)">
+            <title>
+                Mobile Barbero
+            </title>
+
+            <h1 style="text-align:center;">MOBILE BARBERO</h1>
+
+            <h3 style="text-align:center;">What is Mobile Barbero?</h3>
+           <br>
+
+
+            <h3 style="color:LightSlateGray;"><center><i>ABOUT US</center></i></h3>
+
+            <p style="text-align:center;" style="color: aliceblue;">Classic Hair Style & Shave <b> Our Hair Styles Enhance Your Smile. </b> as the primary instrument 
+                <br> where Mobile Barbero interface to mold our Employee youths into skilled productive Barbers
+                <br> and  enabled  professionals workers 
+                <br> Our Goal, beyond becoming a profitable business a trusted
+                <br> destination whereby the clients in our community can come to refresh
+                <br> their mind and bodies replenish their energies , and network 
+                <br> with their colleageus and friends!
+                
+
+            <hr color = "black gray" width = "85%"> 
+
+            <h2 style="text-align:center;"><i>Professional Barbers</i></h2>
+
+            <h3 style="color:mediumvioletred;"><center><i>Set an Appointment </center></i></h3>
+            
+            <br>
+            <br>
+            
+        <div class="center">
+            
+            <div href="C:\Users\Dumayas\Desktop\WEBAPP\Homepage_2\Homepage\Homepage.html" class= " button "  > GET STARTED </div>
+            
+            </div>
+
+            -->
+    <body onload="myFunction()" style=" margin: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    ">
+
+
+        <div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+    <div class="container" style="text-align: center;">
+        <div class="row">
+            <div class="col">
+
+                <br>
+
+                <h1> WELCOME TO</h1>
+                <h1> MOBILE BARBERO </h1>
+
+                <br>
+                <br>
+
+                <a href="Homepage.html" class="btn btn-dark" role="button">GET STARTED</a>  
+                <br>
+                <br>
+
+                
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+      document.getElementById("myDiv").style.borderStyle = "solid";
+    }
+    </script>
+    
+
+
+    
+
+
+   </body>         
+
+    
+</html>
